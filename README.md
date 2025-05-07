@@ -1,4 +1,5 @@
 # rasp-temp-monitor
+
 Raspberry Pi Picoを使用した温湿度モニタープロジェクトです。このプロジェクトは、BME280センサーを使用して温度、湿度、気圧のデータを取得し、Wi-Fi経由でデータを提供します。
 
 ## プロジェクトファイル
@@ -26,3 +27,13 @@ Raspberry Pi Picoを使用した温湿度モニタープロジェクトです。
 - MicroPythonがインストールされた環境
 
 このプロジェクトを使用して、オフィスや自宅の温湿度をモニタリングし、データをリアルタイムで取得することができます。
+
+## ライセンス情報
+
+本プロジェクトで使用している`bme280.py`は、[robert-hh/BME280](https://github.com/robert-hh/BME280) のリポジトリにあるコード（MITライセンス）を利用しています。
+
+```
+Copyright (c) 2016-2020 Robert Hammelrath  
+Released under the MIT license  
+https://opensource.org/licenses/MIT
+```
