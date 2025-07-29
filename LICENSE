@@ -1,7 +1,11 @@
 本プロジェクトには、以下の第三者ソフトウェアのコードが一部含まれています:
 
 - robert-hh/BME280 (https://github.com/robert-hh/BME280)
-  Copyright (c) robert-hh, Paul Cunnane, Peter Dahlebrg, Adafruit Industries, 他
+  Copyright (c) 2014 Adafruit Industries
+    Copyright (c) 2016 Paul Cunnane
+    Copyright (c) 2016 Peter Dahlberg
+    Copyright (c) 2016 David J Taylor
+    Copyright (c) robert-hh
   ライセンス: MIT License相当（LICENSEファイルを参照）
 
 本プロジェクトの新規作成部分はMIT Licenseに従います。
