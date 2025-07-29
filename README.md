@@ -36,6 +36,6 @@ Raspberry Pi Picoを使用した温湿度モニタープロジェクトです。
 以下の第三者コードを含んでおり、それぞれ MIT ライセンスで提供されています：
 
 - [robert-hh/BME280](https://github.com/robert-hh/BME280)  
-  Copyright (c) 2016–2020 Robert Hammelrath  
+  Copyright (c) 2016-2020 Robert Hammelrath  
 - Adafruit Industries  
   Copyright (c) 2014 Adafruit Industries
