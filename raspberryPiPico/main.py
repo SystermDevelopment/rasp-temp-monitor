@@ -45,6 +45,7 @@ def reconnect_wifi():
     if not wlan.isconnected():
         print('Wi-Fi再接続中...')
         wlan.disconnect()
+        wlan.ifconfig((ip, subnet, gateway, dns))
         wlan.connect(ssid, password)
         timeout = 20
         while not wlan.isconnected() and timeout > 0:
