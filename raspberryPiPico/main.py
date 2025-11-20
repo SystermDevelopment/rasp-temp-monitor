@@ -13,6 +13,13 @@ password = config.PASSWORD
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
+
+ip      = "192.168.1.245"
+subnet  = "255.255.255.0"
+gateway = "192.168.1.1"
+dns     = "192.168.1.1"
+wlan.ifconfig((ip, subnet, gateway, dns))
+
 wlan.connect(ssid, password)
 
 while not wlan.isconnected():
