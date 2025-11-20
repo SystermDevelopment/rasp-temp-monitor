@@ -10,14 +10,14 @@ import config  # Wi-Fi設定を別ファイルで管理
 # Wi-Fi接続設定
 ssid = config.SSID
 password = config.PASSWORD
+ip = config.IP
+subnet = config.SUBNET
+gateway = config.GATEWAY
+dns = config.DNS
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
-ip      = "192.168.1.245"
-subnet  = "255.255.255.0"
-gateway = "192.168.1.1"
-dns     = "192.168.1.1"
 wlan.ifconfig((ip, subnet, gateway, dns))
 
 wlan.connect(ssid, password)
