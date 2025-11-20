@@ -10,9 +10,16 @@ import config  # Wi-Fi設定を別ファイルで管理
 # Wi-Fi接続設定
 ssid = config.SSID
 password = config.PASSWORD
+ip = config.IP
+subnet = config.SUBNET
+gateway = config.GATEWAY
+dns = config.DNS
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
+
+wlan.ifconfig((ip, subnet, gateway, dns))
+
 wlan.connect(ssid, password)
 
 while not wlan.isconnected():
@@ -38,6 +45,7 @@ def reconnect_wifi():
     if not wlan.isconnected():
         print('Wi-Fi再接続中...')
         wlan.disconnect()
+        wlan.ifconfig((ip, subnet, gateway, dns))
         wlan.connect(ssid, password)
         timeout = 20
         while not wlan.isconnected() and timeout > 0:
